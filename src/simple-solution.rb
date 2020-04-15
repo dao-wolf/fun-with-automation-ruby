@@ -58,8 +58,6 @@ msg_to_person = msg_to_header.span(class: 'artdeco-pill__text').text
 if msg_to_person == data['searchData']['fullName']
   msg_text_box = browser.div(class: 'msg-form__contenteditable')
   msg_text_box.send_keys 'This is not the automation you\'re looking for... '
-  msg_text_box.send_keys :enter
-  msg_text_box.send_keys 'Link to repo https://github.com/opantsjoha/fun-with-automation-ruby'
   send_button = browser.button(css: '[data-control-name="send"]')
   send_button.click
 else
