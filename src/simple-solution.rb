@@ -2,10 +2,6 @@ require 'watir'
 require 'webdrivers'
 require 'json'
 
-# require 'test/unit'
-# extend Test::Unit::Assertions
-# assert(true)
-
 # Get test data from json file
 file = File.open('test-data.json')
 file_data = file.read
