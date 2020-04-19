@@ -51,13 +51,13 @@ msg_to_header = browser.section(class: 'msg-connections-typeahead__top-fixed-sec
 msg_to_person = msg_to_header.span(class: 'artdeco-pill__text').text
 
 ## make sure it's the right person we're messaging to
-if msg_to_person == data['searchData']['fullName']
-  msg_text_box = browser.div(class: 'msg-form__contenteditable')
-  msg_text_box.send_keys 'This is not the automation you\'re looking for... '
-  send_button = browser.button(css: '[data-control-name="send"]')
-  send_button.click
-else
-  raise 'Oopps! Almost messaged a wrong person.'
-end
+# if msg_to_person == data['searchData']['fullName']
+#   msg_text_box = browser.div(class: 'msg-form__contenteditable')
+#   msg_text_box.send_keys 'This is not the automation you\'re looking for... '
+#   send_button = browser.button(css: '[data-control-name="send"]')
+#   send_button.click
+# else
+#   raise 'Oopps! Almost messaged a wrong person.'
+# end
 
 browser.close
