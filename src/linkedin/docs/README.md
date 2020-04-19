@@ -1,10 +1,10 @@
 # LinkedIn: Fun with Automation 🤖 using Ruby 💎
 
-## Scripts
+## Simple Solutions
 
 ### Sending a message
 
-The `send-message.rb` script does the following:
+The [send-message.rb](../simple-solutions/send-message.rb) script does the following:
 
 - navigate to LinkedIn
 - login using `email` and `password` from `test-data.json` file
